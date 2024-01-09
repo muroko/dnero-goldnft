@@ -156,7 +156,7 @@ export default function Mint() {
 
             <div className="flex flex-col md:flex-row md:space-x-14 w-full mt-10 md:mt-14">
               <div className="relative w-full">
-                <div className="font-coiny z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-4 py-2 bg-black border border-brand-purple rounded-md flex items-center justify-center text-white font-semibold">
+                <div className="font-coiny z-10 absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-4 py-2 bg-black border border-brand-yellow rounded-md flex items-center justify-center text-white font-semibold">
                   <p>
                     <span className="text-brand-pink">{totalMinted}</span> /{' '}
                     {maxSupply}
@@ -251,7 +251,7 @@ export default function Mint() {
                   </button>
                 ) : (
                   <button
-                    className="font-coiny mt-12 w-full bg-gradient-to-br from-brand-purple to-brand-pink shadow-lg px-6 py-3 rounded-md text-2xl text-white hover:shadow-pink-400/50 mx-4 tracking-wide uppercase"
+                    className="font-coiny mt-12 w-full bg-gradient-to-br from-brand-purple to-brand-pink shadow-lg px-6 py-3 rounded-md text-2xl text-white hover:shadow-yellow-400/50 mx-4 tracking-wide uppercase"
                     onClick={() => connect()}
                   >
                     Connect Wallet
