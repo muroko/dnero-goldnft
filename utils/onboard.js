@@ -1,6 +1,6 @@
 import { init } from '@web3-onboard/react'
 import injectedModule from '@web3-onboard/injected-wallets'
-import walletConnectModule from '@web3-onboard/walletconnect'
+//import walletConnectModule from '@web3-onboard/walletconnect'
 import coinbaseModule from '@web3-onboard/coinbase'
 import fortmaticModule from '@web3-onboard/fortmatic'
 
@@ -13,10 +13,11 @@ const fortmatic = fortmaticModule({
 })
 
 const injected = injectedModule()
-const walletConnect = walletConnectModule()
+//const walletConnect = walletConnectModule()
 const coinbaseWallet = coinbaseModule()
 
 const initOnboard = init({
+  //wallets: [walletConnect, coinbaseWallet, injected, fortmatic],
   wallets: [walletConnect, coinbaseWallet, injected, fortmatic],
   chains: [
     // {
