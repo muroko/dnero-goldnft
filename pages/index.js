@@ -6,7 +6,7 @@ import { config } from '../dapp.config'
 
 export default function Home() {
   return (
-    <div className="min-h-screen h-full w-full flex flex-col bg-brand-light overflow-hidden">
+    <div className="min-h-screen h-full w-full flex flex-col bg-brand-dark overflow-hidden">
       <Head>
         <title>{config.title}</title>
         <meta name="description" content={config.description} />
@@ -19,16 +19,16 @@ export default function Home() {
           <Link href="#">
             <a className="font-coiny text-xl md:text-3xl font-bold">
               <span className="bg-gradient-to-br from-brand-blue to-brand-purple pr-2 bg-clip-text text-transparent ">
-                Bored
+                Dnero
               </span>
-              Ape
+              GoldNFT
             </a>
           </Link>
 
           {/* Opensea Twitter Discord Links */}
           <nav aria-label="Contact Menu">
             <ul className="flex items-center space-x-4 md:space-x-6">
-              <li className="cursor-pointer">
+              /**<li className="cursor-pointer">
                 <a href="https://opensea.io" target="_blank" rel="noreferrer">
                   <svg
                     className="w-6 h-6 md:w-8 md:h-8"
@@ -42,7 +42,7 @@ export default function Home() {
                     ></path>
                   </svg>
                 </a>
-              </li>
+              </li>**/
 
               <li className="cursor-pointer">
                 <a
@@ -117,17 +117,14 @@ export default function Home() {
 
             <div className="flex flex-col md:items-start items-center justify-center text-center font-coiny text-gray-800 px-4 md:px-0 py-10 mt-14">
               <h2 className="font-bold text-2xl md:text-4xl uppercase">
-                About BoredApes
+                About Dnero GoldNFT
               </h2>
 
               <p className="mt-6 text-lg">
-                {`BoredApes are a collection of 5,555 burning hot NFTs living in
-                the core of the blockchain. Each individual BoredApes is
-                carefully curated from over 150 traits, along with some
-                incredibly rare 1/1s that have traits that can't be found from
-                any other BoredApes. Our vision is to create an amazing project
-                that will shed light, joy, love, and creativity! Burn on,
-                BoredApes!`}
+                {`Dnero GoldNFT are a collection of 100,000 burn to redeem NFTs
+                to be paired to real life Gold. More details on how to purchase,
+				after the minting, burning and redeem will be giving soon!
+				`}
               </p>
             </div>
           </div>
