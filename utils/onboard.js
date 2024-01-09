@@ -4,7 +4,7 @@ import injectedModule from '@web3-onboard/injected-wallets'
 import coinbaseModule from '@web3-onboard/coinbase'
 import fortmaticModule from '@web3-onboard/fortmatic'
 
-import GoldnftIcon from '../Goldnft'
+import GoldnftIcon from '../Goldnft.png'
 
 const RPC_URL = process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL
 
