@@ -191,7 +191,7 @@ export default function Mint() {
                     </svg>
                   </button>
 
-                  <p className="flex items-center justify-center flex-1 grow text-center font-bold text-brand-pink text-3xl md:text-4xl">
+                  <p className="flex items-center justify-center flex-1 grow text-center font-bold text-brand-yellow text-3xl md:text-4xl">
                     {mintAmount}
                   </p>
 
@@ -251,7 +251,7 @@ export default function Mint() {
                   </button>
                 ) : (
                   <button
-                    className="font-coiny mt-12 w-full bg-gradient-to-br from-brand-yellow to-brand-yellow shadow-lg px-6 py-3 rounded-md text-2xl text-white hover:shadow-yellow-400/50 mx-4 tracking-wide uppercase"
+                    className="font-coiny mt-12 w-full bg-gradient-to-br from-brand-black to-brand-black shadow-lg px-6 py-3 rounded-md text-2xl text-yellow hover:shadow-yellow-400/50 mx-4 tracking-wide uppercase"
                     onClick={() => connect()}
                   >
                     Connect Wallet

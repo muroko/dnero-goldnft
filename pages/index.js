@@ -19,9 +19,9 @@ export default function Home() {
           <Link href="#">
             <a className="font-coiny text-xl md:text-3xl font-bold">
               <span className="bg-gradient-to-br from-brand-blue to-brand-yellow pr-2 bg-clip-text text-transparent ">
-                Dnero
+                Dnero GoldNFT
               </span>
-              GoldNFT
+              
             </a>
           </Link>
 
