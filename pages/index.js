@@ -18,7 +18,7 @@ export default function Home() {
           {/* Logo */}
           <Link href="#">
             <a className="font-coiny text-xl md:text-3xl font-bold">
-              <span className="bg-gradient-to-br from-brand-blue to-brand-orange pr-2 bg-clip-text text-transparent ">
+              <span className="bg-gradient-to-br from-brand-blue to-brand-yellow pr-2 bg-clip-text text-transparent ">
                 Dnero
               </span>
               GoldNFT

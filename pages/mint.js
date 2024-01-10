@@ -143,10 +143,10 @@ export default function Mint() {
                 Disconnect
               </button>
             )}
-            <h1 className="font-coiny uppercase font-bold text-3xl md:text-4xl bg-gradient-to-br  from-brand-green to-brand-blue bg-clip-text text-transparent mt-3">
+            <h1 className="font-coiny uppercase font-bold text-3xl md:text-4xl bg-gradient-to-br  from-brand-yellow to-brand-yellow bg-clip-text text-transparent mt-3">
               {paused ? 'Paused' : isPreSale ? 'Pre-Sale' : 'Public Sale'}
             </h1>
-            <h3 className="text-sm text-pink-200 tracking-widest">
+            <h3 className="text-sm text-yellow-200 tracking-widest">
               {wallet?.accounts[0]?.address
                 ? wallet?.accounts[0]?.address.slice(0, 8) +
                   '...' +
@@ -251,7 +251,7 @@ export default function Mint() {
                   </button>
                 ) : (
                   <button
-                    className="font-coiny mt-12 w-full bg-gradient-to-br from-brand-purple to-brand-pink shadow-lg px-6 py-3 rounded-md text-2xl text-white hover:shadow-yellow-400/50 mx-4 tracking-wide uppercase"
+                    className="font-coiny mt-12 w-full bg-gradient-to-br from-brand-yellow to-brand-yellow shadow-lg px-6 py-3 rounded-md text-2xl text-white hover:shadow-yellow-400/50 mx-4 tracking-wide uppercase"
                     onClick={() => connect()}
                   >
                     Connect Wallet
@@ -275,7 +275,7 @@ export default function Mint() {
 
             {/* Contract Address */}
             <div className="border-t border-gray-800 flex flex-col items-center mt-10 py-2 w-full">
-              <h3 className="font-coiny text-2xl text-brand-pink uppercase mt-6">
+              <h3 className="font-coiny text-2xl text-brand-yellow uppercase mt-6">
                 Contract Address
               </h3>
               <a
