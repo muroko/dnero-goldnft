@@ -251,7 +251,7 @@ export default function Mint() {
                   </button>
                 ) : (
                   <button
-                    className="font-coiny mt-12 w-full bg-gradient-to-br from-brand-black to-brand-yellow shadow-lg px-6 py-3 rounded-md text-2xl text-yellow hover:shadow-yellow-400/50 mx-4 tracking-wide uppercase"
+                    className="font-coiny mt-12 w-full bg-gradient-to-br from-brand-gray to-brand-blue shadow-lg px-6 py-3 rounded-md text-2xl text-yellow hover:shadow-yellow-400/50 mx-4 tracking-wide uppercase"
                     onClick={() => connect()}
                   >
                     Connect Wallet
