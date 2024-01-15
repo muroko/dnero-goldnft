@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "OwnableDelegateProxy",
+  "sourceName": "contracts/GoldNFT.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220cc9d31758aa81422a82f1e4681d771f5cf9ad507cc12ccbbcd7ffacca999393f64736f6c63430008130033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220cc9d31758aa81422a82f1e4681d771f5cf9ad507cc12ccbbcd7ffacca999393f64736f6c63430008130033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
