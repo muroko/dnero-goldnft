@@ -6,7 +6,7 @@ const whitelist = require('../scripts/whitelist.js')
 const web3 = createAlchemyWeb3(process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL)
 import { config } from '../dapp.config'
 
-const contract = require('../artifacts/contracts/BoredApe.sol/BoredApe.json')
+const contract = require('../artifacts/contracts/GoldNFT.sol/GoldNFT.json')
 const nftContract = new web3.eth.Contract(contract.abi, config.contractAddress)
 
 // Calculate merkle root from the whitelist array
@@ -92,16 +92,16 @@ export const presaleMint = async (mintAmount) => {
     return {
       success: true,
       status: (
-        <a href={`https://rinkeby.etherscan.io/tx/${txHash}`} target="_blank">
+        <a href={`https://explorer.dnerochain.xyz/tx/${txHash}`} target="_blank">
           <p>✅ Check out your transaction on Etherscan:</p>
-          <p>{`https://rinkeby.etherscan.io/tx/${txHash}`}</p>
+          <p>{`https://explorer.dnerochain.xyz/tx/${txHash}`}</p>
         </a>
       )
     }
   } catch (error) {
     return {
       success: false,
-      status: '😞 Smth went wrong:' + error.message
+      status: '😞 Oops! Something went wrong:' + error.message
     }
   }
 }
@@ -139,16 +139,16 @@ export const publicMint = async (mintAmount) => {
     return {
       success: true,
       status: (
-        <a href={`https://rinkeby.etherscan.io/tx/${txHash}`} target="_blank">
+        <a href={`https://explorer.dnerochain.xyz/tx/${txHash}`} target="_blank">
           <p>✅ Check out your transaction on Etherscan:</p>
-          <p>{`https://rinkeby.etherscan.io/tx/${txHash}`}</p>
+          <p>{`https://explorer.dnerochain.xyz/tx/${txHash}`}</p>
         </a>
       )
     }
   } catch (error) {
     return {
       success: false,
-      status: '😞 Smth went wrong:' + error.message
+      status: '😞 Oops! Something went wrong:' + error.message
     }
   }
 }

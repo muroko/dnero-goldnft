@@ -1,5 +1,5 @@
 /**
- *  This script will calculate the constructor arguments for BoredApe.sol and deploy it.
+ *  This script will calculate the constructor arguments for GoldNFT.sol and deploy it.
  *  After deploying, you can access the contract on etherscan.io with the deployed contract address.
  */
 
@@ -8,9 +8,13 @@ const { MerkleTree } = require('merkletreejs')
 const keccak256 = require('keccak256')
 const whitelist = require('./whitelist.js')
 
-const BASE_URI = 'ipfs://Qmb5A1fFECM2iFHgUioii2khT814nCi6VU9aHXHHqNxHCK/'
+//GoldNFT Official - Dnero Mainnet Official IPFS CID
+/** const BASE_URI = 'ipfs://QmSkKxTgVtdS8siDgg1Tkp57Ek5GLvPfKdMB1ZDWLayeY5/'*/
+//GoldNFT-Test
+const BASE_URI = 'ipfs://QmcE2mf6saVaE7Hk3u1tFA37LpQfcwbtVG5uQduBZJpHA8/'
 const proxyRegistryAddressRinkeby = '0xf57b2c51ded3a29e6891aba85459d600256cf317'
-const proxyRegistryAddressMainnet = '0xa5409ec958c83c3f309868babaca7c86dcb077c1'
+// proxyRegistryAddressMainnet Fully Deployed on Dnero Mainnet
+const proxyRegistryAddressMainnet = '0x0f3c9AE3d23A7ef05FDAe18c6558E2c263AA7b1a'
 
 async function main() {
   // Calculate merkle root from the whitelist array
@@ -19,16 +23,16 @@ async function main() {
   const root = merkleTree.getRoot()
 
   // Deploy the contract
-  const BoredApes = await hre.ethers.getContractFactory('BoredApe')
-  const boredApes = await BoredApes.deploy(
+  const GoldNFT = await hre.ethers.getContractFactory('GoldNFT')
+  const goldNFT = await GoldNFT.deploy(
     BASE_URI,
     root,
-    proxyRegistryAddressRinkeby
+    proxyRegistryAddressMainnet
   )
 
-  await boredApes.deployed()
+  await goldNFT.deployed()
 
-  console.log('BoredApes deployed to:', boredApes.address)
+  console.log('GoldNFT deployed to:', goldnft.address)
 }
 
 // We recommend this pattern to be able to use async/await everywhere

@@ -1,4 +1,4 @@
-require('dotenv').config()
+//require('dotenv').config()
 require('@nomiclabs/hardhat-waffle')
 
 // You need to export an object to set up your config
@@ -9,7 +9,7 @@ require('@nomiclabs/hardhat-waffle')
  */
 module.exports = {
   solidity: {
-    version: '0.8.9',
+    version: '0.8.19',
     settings: {
       optimizer: {
         enabled: true,
@@ -17,12 +17,12 @@ module.exports = {
       }
     }
   },
-  defaultNetwork: 'rinkeby',
+  defaultNetwork: 'truffledashboard',
   networks: {
     hardhat: {},
-    rinkeby: {
-      url: `${process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL}`,
-      accounts: [`0x${process.env.METAMASK_PRIVATE_KEY}`]
+    truffledashboard: {
+      url: `http://localhost:24012/rpc`//,
+      //accounts: [`0x${process.env.METAMASK_PRIVATE_KEY}`]
     }
   },
   paths: {
@@ -32,7 +32,7 @@ module.exports = {
     artifacts: './artifacts'
   },
   mocha: {
-    timeout: 40000
+    timeout: 60000000
   },
   etherscan: {
     apiKey: `${process.env.ETHERSCAN_API_KEY}`

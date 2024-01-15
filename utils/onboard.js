@@ -6,6 +6,7 @@ import fortmaticModule from '@web3-onboard/fortmatic'
 
 import GoldnftIcon from '../Goldnft'
 
+//const RPC_URL = https://eth-rpc-api.dnerochain.xyz/rpc
 const RPC_URL = process.env.NEXT_PUBLIC_ALCHEMY_RPC_URL
 
 const fortmatic = fortmaticModule({
@@ -33,9 +34,9 @@ const initOnboard = init({
     //   rpcUrl: 'https://ropsten.infura.io/v3/ababf9851fd845d0a167825f97eeb12b'
     // },
     {
-      id: '0x4',
-      token: 'rETH',
-      label: 'Ethereum Rinkeby Testnet',
+      id: '0x160f',
+      token: 'DToken',
+      label: 'Dnero Mainnet',
       rpcUrl: RPC_URL
     }
     // {
@@ -46,9 +47,9 @@ const initOnboard = init({
     // }
   ],
   appMetadata: {
-    name: 'BoredApes',
+    name: 'GoldNFTs',
     icon: GoldnftIcon,
-    description: 'We are some bored apes',
+    description: 'Dnero GoldNft Minting Dapp',
     recommendedInjectedWallets: [
       { name: 'MetaMask', url: 'https://metamask.io' },
       { name: 'Coinbase', url: 'https://wallet.coinbase.com/' }
