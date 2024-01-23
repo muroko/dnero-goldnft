@@ -216,7 +216,7 @@ export default function Mint() {
                   </button>
                 </div>
 
-                <p className="text-sm text-pink-200 tracking-widest mt-3">
+                <p className="text-sm text-gray-200 tracking-widest mt-3">
                   Max Mint Amount: {maxMintAmount}
                 </p>
 
@@ -279,7 +279,7 @@ export default function Mint() {
                 Contract Address
               </h3>
               <a
-                href={`https://rinkeby.etherscan.io/address/${config.contractAddress}#readContract`}
+                href={`https://explorer.dnerochain.xyz/address/${config.contractAddress}#readContract`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 mt-4"
