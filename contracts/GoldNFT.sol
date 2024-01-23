@@ -31,7 +31,7 @@ contract GoldNFT is
     bool public paused = false;
     bool public revealed = false;
     bool public presaleM = false;
-    bool public publicM = false;
+    bool public publicM = true;
 
     uint256 presaleAmountLimit = 1000;
     mapping(address => uint256) public _presaleClaimed;
